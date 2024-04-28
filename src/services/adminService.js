@@ -2,8 +2,8 @@ import axios from "axios";
 
 const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
-console.log(`${BASE_URL}/admin/login`);
 const adminLogin = async admin => {
+	console.log(`${BASE_URL}/admin/login`);
 	const res = await axios.post(`${BASE_URL}/admin/login`, admin);
 	return res.data;
 };
